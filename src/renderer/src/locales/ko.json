@@ -1,0 +1,310 @@
+{
+  "common": {
+    "username": "사용자",
+    "admin": "관리자",
+    "connecting": "연결 중...",
+    "reconnecting": "재연결 중...",
+    "reconnect": "재연결",
+    "loading": "로딩 중...",
+    "confirm": "확인",
+    "cancel": "취소",
+    "close": "닫기",
+    "save": "저장",
+    "edit": "수정",
+    "delete": "삭제",
+    "success": "성공",
+    "error": {
+      "noPermission": "권한이 없습니다.",
+      "serverError": "오류가 발생하였습니다.",
+      "networkError": "네트워크 연결이 원활하지 않습니다."
+    }
+  },
+  "pages": {
+    "login": {
+      "title": "로그인",
+      "password": "비밀번호",
+      "companyName": "유온 로보틱스",
+      "adminMode": "관리자 모드",
+      "error": {
+        "passwordLength": "비밀번호는 4자 이상 16자 이하로 입력해야 합니다.",
+        "loginFailed": "로그인에 실패하였습니다.",
+        "passwordMismatch": "비밀번호가 일치하지 않습니다.",
+        "networkError": "네트워크 연결이 원활하지 않습니다."
+      }
+    },
+    "main": {
+      "logout": "로그아웃",
+      "setting": {
+        "displayMode": "화면 모드",
+        "language": "언어",
+        "close": "닫기",
+        "logoutConfirmHeader": "로그아웃",
+        "logoutConfirmMessage": "로그아웃 하시겠습니까?"
+      },
+      "menu": {
+        "robotStatus": "실시간 현황",
+        "statistics": "통계",
+        "robotSetting": "로봇 설정",
+        "sortingSetting": "선별기 설정",
+        "appSetting": "환경 설정"
+      },
+      "theme": {
+        "light": "라이트",
+        "dark": "다크"
+      }
+    },
+    "sortingSetting": {
+      "title": "선별기 중량 설정",
+      "statusTitle": "선별기 설정 현황",
+      "sector": "배출구",
+      "weightLower": "중량 하",
+      "weightUpper": "중량 상",
+      "save": "선별기 설정 저장",
+      "numberPad": {
+        "title": "{sector} 배출구 - {label}",
+        "lower": "중량 하",
+        "upper": "중량 상"
+      },
+      "messages": {
+        "inputError": "입력 오류",
+        "inputErrorDetail": "중량 하 값이 중량 상 값보다 큰 배출구가 있습니다.",
+        "saveConfirm": "선별기 배출구 설정을 저장하시겠습니까?",
+        "saveSuccess": "저장 완료",
+        "saveSuccessDetail": "선별기 배출구 설정이 저장되었습니다.",
+        "saveFailed": "저장 실패",
+        "saveFailedDetail": "선별기 배출구 설정 저장에 실패했습니다."
+      }
+    },
+    "robotSetting": {
+      "robotId": "로봇 ID",
+      "robotDescription": "설명",
+      "errorCode": "오류 코드",
+      "errorDescription": "오류 메세지",
+      "registerErrorCode": "오류 코드 등록",
+      "registerRobot": "로봇 등록",
+      "deleteErrorCodeConfirm": "오류 코드를 삭제하시겠습니까?",
+      "deleteErrorCodeSuccess": "오류 코드가 삭제되었습니다.",
+      "deleteErrorCodeFailed": "오류 코드 삭제에 실패했습니다.",
+      "robotListLoadFailed": "로봇 목록을 불러오는데 실패했습니다.",
+      "errorCodeLoadFailed": "오류 코드 목록을 불러오는데 실패했습니다.",
+      "robotRegisterTitle": "로봇 등록",
+      "robotEditTitle": "로봇 수정",
+      "robotIdLabel": "로봇 ID",
+      "robotDescriptionLabel": "설명",
+      "robotIdPlaceholder": "숫자",
+      "robotDescriptionPlaceholder": "20자 이내",
+      "robotRegisterSuccess": "로봇이 등록되었습니다.",
+      "robotRegisterFailed": "로봇 등록에 실패했습니다.",
+      "robotUpdateSuccess": "로봇이 수정되었습니다.",
+      "robotUpdateFailed": "로봇 수정에 실패했습니다.",
+      "deleteRobotConfirm": "로봇을 삭제하시겠습니까?",
+      "deleteRobotSuccess": "로봇이 삭제되었습니다.",
+      "deleteRobotFailed": "로봇 삭제에 실패했습니다.",
+      "robotIdAlreadyRegistered": "이미 등록된 로봇 아이디입니다.",
+      "robotNotRegistered": "등록되지 않은 로봇입니다.",
+      "registerTitle": "오류 코드 등록",
+      "editTitle": "오류 코드 수정",
+      "errorCodeLabel": "오류 코드",
+      "errorDescriptionLabel": "오류 메세지",
+      "errorCodePlaceholder": "4자리 숫자",
+      "errorDescriptionPlaceholder": "30자 이내",
+      "registerSuccess": "오류 코드가 등록되었습니다.",
+      "registerFailed": "오류 코드 등록에 실패했습니다.",
+      "updateSuccess": "오류 코드가 수정되었습니다.",
+      "updateFailed": "오류 코드 수정에 실패했습니다.",
+      "errorCodeAlreadyRegistered": "이미 등록된 오류 코드입니다.",
+      "commandId": "명령어 ID",
+      "command": "명령어",
+      "commandDescription": "설명",
+      "extraUsable": "추가 명령어",
+      "extraUsableOn": "사용",
+      "extraUsableOff": "미사용",
+      "registerCommand": "명령어 등록",
+      "errorCodeListTitle": "오류 코드",
+      "robotListTitle": "로봇",
+      "commandListTitle": "로봇 명령어",
+      "commandLoadFailed": "명령어 목록을 불러오는데 실패했습니다.",
+      "commandRegisterTitle": "명령어 등록",
+      "commandEditTitle": "명령어 수정",
+      "commandIdLabel": "명령어 ID",
+      "commandLabel": "명령어",
+      "commandDescriptionLabel": "설명",
+      "extraUsableLabel": "추가 명령어 사용",
+      "commandPlaceholder": "명령어",
+      "commandDescriptionPlaceholder": "20자 이내",
+      "commandRegisterSuccess": "명령어가 등록되었습니다.",
+      "commandRegisterFailed": "명령어 등록에 실패했습니다.",
+      "commandUpdateSuccess": "명령어가 수정되었습니다.",
+      "commandUpdateFailed": "명령어 수정에 실패했습니다.",
+      "deleteCommandConfirm": "명령어를 삭제하시겠습니까?",
+      "deleteCommandSuccess": "명령어가 삭제되었습니다.",
+      "deleteCommandFailed": "명령어 삭제에 실패했습니다.",
+      "commandAlreadyRegistered": "이미 등록된 명령어입니다.",
+      "commandNotRegistered": "등록되지 않은 명령어입니다.",
+      "validation": {
+        "robotId": "로봇 ID는 숫자로 입력해야 합니다.",
+        "robotDescription": "설명은 20자 이내로 입력해야 합니다.",
+        "errorCode": "오류 코드는 4자리 숫자로 입력해야 합니다.",
+        "errorDescription": "오류 메세지는 30자 이내로 입력해야 합니다.",
+        "command": "명령어를 입력해야 합니다.",
+        "commandDescription": "설명은 20자 이내로 입력해야 합니다."
+      }
+    },
+    "taskStatus": {
+      "safety": {
+        "connectionStatus": "안전 컨트롤러 연결 상태",
+        "connected": "연결",
+        "disconnected": "연결 끊김"
+      },
+      "robot": {
+        "title": "로봇",
+        "robot_id": "{id} 호기",
+        "disconnected": "로봇 연결 끊김",
+        "detail": "상세보기",
+        "sector": " 배출구",
+        "progress": "진행률",
+        "status": {
+          "disconnected": "연결 끊김",
+          "noInfo": "정보 없음",
+          "idle": "대기",
+          "running": "운전",
+          "paused": "일시정지",
+          "stopped": "정지",
+          "emergency": "긴급정지"
+        }
+      },
+      "sorting": {
+        "connectionStatus": "선별기 연결 상태",
+        "sorterDisconnected": "선별기 연결 끊김",
+        "connected": "연결",
+        "disconnected": "연결 끊김"
+      },
+      "task": {
+        "title": "작업",
+        "disconnected": "작업 진행 정보 연결 끊김",
+        "commandNotFound": "해당 명령어를 찾을 수 없습니다.",
+        "target": "목표",
+        "done": "완료",
+        "progress": "진행률",
+        "start": "작업 시작",
+        "stop": "작업 종료",
+        "confirmStart": "작업을 시작하시겠습니까?",
+        "confirmStop": "작업을 종료하시겠습니까?",
+        "idle": "대기 중",
+        "waiting": "대기중 {picked}/{target}",
+        "startLabel": "시작",
+        "stopLabel": "종료",
+        "remoteControlNoRobot": "연결된 로봇이 없어 원격 제어를 보낼 수 없습니다.",
+        "invalidInput": "잘못된 정보를 입력하였습니다.",
+        "startRequested": "작업 시작을 요청하였습니다.",
+        "stopRequested": "작업 종료를 요청하였습니다."
+      }
+    },
+    "taskHistories": {
+      "search": "검색",
+      "next": "다음",
+      "invalidDate": "날짜 형식이 올바르지 않습니다.",
+      "invalidStartTime": "시작 시간 형식이 올바르지 않습니다.",
+      "invalidEndTime": "종료 시간 형식이 올바르지 않습니다.",
+      "invalidTimeRange": "시작 시간은 종료 시간보다 이전이어야 합니다.",
+      "dateInput": "날짜 입력",
+      "startTimeInput": "시작 시간 입력",
+      "endTimeInput": "종료 시간 입력",
+      "noData": "데이터 없음",
+      "statusOk": "완료",
+      "statusFail": "실패",
+      "sectorDetail": "작업 당시 배출구 정보",
+      "taskList": "작업 내역 목록",
+      "taskDetail": "작업 상세",
+      "selectTask": "작업을 선택하세요",
+      "columns": {
+        "taskId": "작업 ID",
+        "executedAt": "실행 일시",
+        "finishedAt": "완료 일시",
+        "workedSector": "작업 배출구",
+        "status": "상태",
+        "sector": "배출구",
+        "targetCount": "목표 수량",
+        "pickedCount": "작업 수량",
+        "progressRate": "진행률",
+        "workedCount": "작업 개수",
+        "startedAt": "시작 일시",
+        "endedAt": "종료 일시",
+        "robotId": "로봇 ID"
+      }
+    },
+    "robotErrorHistories": {
+      "noData": "데이터 없음",
+      "columns": {
+        "occurredAt": "발생 일시",
+        "code": "오류 코드",
+        "message": "오류 메세지"
+      }
+    },
+    "robotDetail": {
+      "selectRobotPlaceholder": "로봇을 선택하세요",
+      "panels": {
+        "realTimeTask": "실시간 작업 내역",
+        "robotStatus": "로봇 상태",
+        "taskHistory": "작업 내역"
+      },
+      "emptyMessage": "작업 내역이 없습니다.",
+      "remoteControl": "원격 제어",
+      "remoteControlCommandListTitle": "원격 명령어 리스트",
+      "remoteControlConfirmTitle": "원격 제어 확인",
+      "remoteControlConfirmMessage": "\"{command}\" 명령어를 전송하시겠습니까?",
+      "remoteControlExtraCommandLabel": "추가 명령어",
+      "remoteControlSend": "원격 제어 전송",
+      "remoteControlHistoryTitle": "원격 제어 내역",
+      "remoteControlHistoryEmpty": "원격 제어 내역이 없습니다.",
+      "remoteControlHistoryCommandColumn": "명령어",
+      "remoteControlHistoryExtraDataColumn": "추가 명령어",
+      "remoteControlHistoryDescriptionColumn": "설명",
+      "remoteControlHistoryCreatedAtColumn": "전송 일시",
+      "robotArmMeshLoadFailed": "3D 메쉬 일부를 불러오지 못했습니다.",
+      "robotArmModelLoadFailed": "3D 모델을 불러오지 못했습니다.",
+      "robotListLoadFailed": "로봇 목록을 불러오지 못했습니다.",
+      "remoteControlCommandLoadFailed": "명령어 목록을 불러오는데 실패했습니다.",
+      "remoteControlSendSuccess": "원격 제어 요청이 전송되었습니다.",
+      "remoteControlSendFailed": "원격 제어 요청 전송에 실패했습니다.",
+      "columns": {
+        "executedAt": "실행 일시",
+        "workedSector": "작업 섹터",
+        "targetCount": "목표 개수",
+        "pickedCount": "작업 개수",
+        "status": "진행 여부"
+      },
+      "status": {
+        "inProgress": "진행 중",
+        "completed": "완료"
+      }
+    },
+    "statistics": {
+      "taskStatus": "작업 통계",
+      "taskHistories": "작업 내역",
+      "robotTaskHistories": "로봇 작업 내역",
+      "errorStatistics": "오류 통계",
+      "robotErrorHistories": "로봇 오류 내역",
+      "charts": {
+        "weeklyByDay": "금주 일별 작업량",
+        "weeklyByRobot": "금주 로봇별 작업량",
+        "dailyByRobot": "금일 로봇별 작업량",
+        "dailyUtilization": "금일 로봇별 가동률",
+        "weeklyLossRateByDay": "금주 일별 평균 로스율",
+        "weeklyErrorCountByRobot": "금주 로봇별 평균 오류 발생 건수",
+        "dailyLossRateByRobot": "금일 로봇별 로스율",
+        "dailyErrorCountByRobot": "금일 로봇별 오류 발생 건수",
+        "days": {
+          "mon": "월",
+          "tue": "화",
+          "wed": "수",
+          "thu": "목",
+          "fri": "금",
+          "sat": "토",
+          "sun": "일"
+        },
+        "total": "합산"
+      }
+    }
+  }
+}

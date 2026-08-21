@@ -1,0 +1,365 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- This URDF was automatically created by SolidWorks to URDF Exporter! Originally created by Stephen Brawner (brawner@gmail.com) 
+     Commit Version: 1.6.0-4-g7f85cfe  Build Version: 1.6.7995.38578
+     For more information, please see http://wiki.ros.org/sw_urdf_exporter -->
+<robot
+  name="HCR-14">
+  <link
+    name="base_link">
+    <inertial>
+      <origin
+        xyz="9.38736084774493E-06 0.0493844907506693 -4.02296493285542E-06"
+        rpy="0 0 0" />
+      <mass
+        value="6.46482842791614" />
+      <inertia
+        ixx="0.0178782877032246"
+        ixy="2.22837898594166E-06"
+        ixz="-1.67982170663967E-06"
+        iyy="0.0247179425171111"
+        iyz="-7.70498029576211E-07"
+        izz="0.0178726859253023" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://HCR-14/meshes/base_link.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.752941176470588 0.752941176470588 0.752941176470588 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://HCR-14/meshes/base_link.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <link
+    name="link_1">
+    <inertial>
+      <origin
+        xyz="-1.31086758549219E-06 -0.0180691796526197 -0.118674621611024"
+        rpy="0 0 0" />
+      <mass
+        value="12.9104206035346" />
+      <inertia
+        ixx="0.044955583336061"
+        ixy="-3.70082594972065E-07"
+        ixz="-1.90991833222539E-06"
+        iyy="0.0341351846024574"
+        iyz="-0.00397202156346769"
+        izz="0.0484295522969553" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://HCR-14/meshes/link_1.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.752941176470588 0.752941176470588 0.752941176470588 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://HCR-14/meshes/link_1.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="joint_1"
+    type="continuous">
+    <origin
+      xyz="0 0 0.0936"
+      rpy="-3.1416 0 -2.9138" />
+    <parent
+      link="base_link" />
+    <child
+      link="link_1" />
+    <axis
+      xyz="0 0 1" />
+  </joint>
+  <link
+    name="link_2">
+    <inertial>
+      <origin
+        xyz="0.00179179429216914 0.306595108510553 0.177359767343198"
+        rpy="0 0 0" />
+      <mass
+        value="36.3819642001833" />
+      <inertia
+        ixx="0.260862813341278"
+        ixy="0.0216900394319173"
+        ixz="0.00188281050075093"
+        iyy="0.0789232392048367"
+        iyz="-0.00839789110629184"
+        izz="0.266679971911473" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://HCR-14/meshes/link_2.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.752941176470588 0.752941176470588 0.752941176470588 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://HCR-14/meshes/link_2.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="joint_2"
+    type="continuous">
+    <origin
+      xyz="0 -0.038576 -0.1134"
+      rpy="-1.5708 0 -2.9138" />
+    <parent
+      link="link_1" />
+    <child
+      link="link_2" />
+    <axis
+      xyz="0.22583 0 0.97417" />
+  </joint>
+  <link
+    name="link_3">
+    <inertial>
+      <origin
+        xyz="0.0016894158763914 0.275657408425868 4.0648240573482E-07"
+        rpy="0 0 0" />
+      <mass
+        value="12.7504114133657" />
+      <inertia
+        ixx="0.0805681474120238"
+        ixy="0.00107049309459374"
+        ixz="1.52154026183092E-07"
+        iyy="0.014923035998616"
+        iyz="-3.04619087945638E-09"
+        izz="0.0814039673374772" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://HCR-14/meshes/link_3.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.752941176470588 0.752941176470588 0.752941176470588 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://HCR-14/meshes/link_3.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="joint_3"
+    type="continuous">
+    <origin
+      xyz="-0.088169 0.72437 0.020439"
+      rpy="1.1216 -1.343 0" />
+    <parent
+      link="link_2" />
+    <child
+      link="link_3" />
+    <axis
+      xyz="1 0 0" />
+  </joint>
+  <link
+    name="link_4">
+    <inertial>
+      <origin
+        xyz="-1.51414784932413E-07 -0.0066296121380055 0.139065100167734"
+        rpy="0 0 0" />
+      <mass
+        value="3.01471982061409" />
+      <inertia
+        ixx="0.00412257571812046"
+        ixy="-8.636616900391E-09"
+        ixz="-1.05140430233658E-08"
+        iyy="0.00402558354923834"
+        iyz="0.000435644678447973"
+        izz="0.00325426822734054" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://HCR-14/meshes/link_4.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.752941176470588 0.752941176470588 0.752941176470588 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://HCR-14/meshes/link_4.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="joint_4"
+    type="continuous">
+    <origin
+      xyz="-0.0020713 0.5388 0"
+      rpy="-1.5708 -0.70214 -1.5708" />
+    <parent
+      link="link_3" />
+    <child
+      link="link_4" />
+    <axis
+      xyz="0 0 1" />
+  </joint>
+  <link
+    name="link_5">
+    <inertial>
+      <origin
+        xyz="-9.61806931876197E-08 -0.00662997089930828 0.128894650108336"
+        rpy="0 0 0" />
+      <mass
+        value="3.01469214277672" />
+      <inertia
+        ixx="0.00412254613922222"
+        ixy="1.40476700105207E-08"
+        ixz="-1.04568491747774E-08"
+        iyy="0.00402554828765514"
+        iyz="0.000435629946397853"
+        izz="0.0032542744882432" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://HCR-14/meshes/link_5.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.752941176470588 0.752941176470588 0.752941176470588 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://HCR-14/meshes/link_5.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="joint_5"
+    type="continuous">
+    <origin
+      xyz="0 -0.013176 0.1482"
+      rpy="-1.5708 0.54461 -3.1416" />
+    <parent
+      link="link_4" />
+    <child
+      link="link_5" />
+    <axis
+      xyz="0 0 1" />
+  </joint>
+  <link
+    name="link_6">
+    <inertial>
+      <origin
+        xyz="4.90690555628448E-05 -0.00135595533881405 0.0965434171678773"
+        rpy="0 0 0" />
+      <mass
+        value="0.86710164629103" />
+      <inertia
+        ixx="0.000484187960133565"
+        ixy="8.59100702323633E-07"
+        ixz="-3.29098606139018E-07"
+        iyy="0.000525036926392689"
+        iyz="4.6918465244615E-07"
+        izz="0.000850183020005044" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://HCR-14/meshes/link_6.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.752941176470588 0.752941176470588 0.752941176470588 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://HCR-14/meshes/link_6.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="joint_6"
+    type="continuous">
+    <origin
+      xyz="0 -0.013519 0.13802"
+      rpy="-1.5708 1.4907 3.1416" />
+    <parent
+      link="link_5" />
+    <child
+      link="link_6" />
+    <axis
+      xyz="0 0 1" />
+  </joint>
+</robot>

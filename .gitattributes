@@ -1,0 +1,4 @@
+# HCR-14 3D model binary assets stored with Git LFS
+src/renderer/src/assets/3d-model/HCR-14/meshes/* filter=lfs diff=lfs merge=lfs -text
+*.STL filter=lfs diff=lfs merge=lfs -text
+*.stl filter=lfs diff=lfs merge=lfs -text

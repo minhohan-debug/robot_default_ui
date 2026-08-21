@@ -1,0 +1,211 @@
+/* ==========================================================================
+   유온로보틱스 공용 컬러 시스템 (Light / Dark Theme)
+   ========================================================================== */
+
+:root {
+  /* ------------------------------------------------------------------------
+     1. LIGHT THEME (공용) Tokens
+     ------------------------------------------------------------------------ */
+  &[data-theme='light'] {
+    // Primary (Blue)
+    --color-primary-950: #1a3a5f;
+    --color-primary-800: #214d7d;
+    --color-primary-700: #2b5a91;
+    --color-primary-600: #316ea3;
+    --color-primary-500: #3672b7;
+    --color-primary-400: #407fc6;
+    --color-primary-300: #5b8dcc;
+    --color-primary-200: #6d9dd3;
+    --color-primary-100: #8ca9d9;
+    --color-primary-50: #bfd4ec;
+    --color-primary-0: #eaf1f9;
+
+    // Error (Red)
+    --color-error-950: #5c0b0c;
+    --color-error-800: #8c1b1b;
+    --color-error-700: #b31f1f;
+    --color-error-600: #e43a32;
+    --color-error-500: #ff3b30;
+    --color-error-400: #ff7a70;
+    --color-error-300: #ff9b94;
+    --color-error-200: #ffb7b2;
+    --color-error-100: #ffddcc;
+    --color-error-50: #ffe2df;
+    --color-error-0: #ffffff;
+
+    // Warning (Orange)
+    --color-warning-950: #7a2a00;
+    --color-warning-800: #874100;
+    --color-warning-700: #cf4901;
+    --color-warning-600: #e95201;
+    --color-warning-500: #fe5e06;
+    --color-warning-400: #fe7d3f;
+    --color-warning-300: #fe9a6a;
+    --color-warning-200: #febe91;
+    --color-warning-100: #fee9da;
+    --color-warning-50: #feae83;
+    --color-warning-0: #fffef6;
+
+    // Accent (Lime)
+    --color-accent-950: #4d5b12;
+    --color-accent-800: #647320;
+    --color-accent-700: #9cbf32;
+    --color-accent-600: #a3d946;
+    --color-accent-500: #b7d94b;
+    --color-accent-400: #87d94b;
+    --color-accent-300: #c7e5a6;
+    --color-accent-200: #e2f2a8;
+    --color-accent-100: #ebf7c2;
+    --color-accent-50: #f1fad4;
+    --color-accent-0: #fdfef9;
+
+    // Success (Indigo)
+    --color-success-950: #0d1a99;
+    --color-success-800: #1620cc;
+    --color-success-700: #1b2aff;
+    --color-success-600: #3e4aff;
+    --color-success-500: #5d64ff;
+    --color-success-400: #7c87ff;
+    --color-success-300: #9da5ff;
+    --color-success-200: #bdc2ff;
+    --color-success-100: #dce0ff;
+    --color-success-50: #ecefff;
+    --color-success-0: #f6f7ff;
+
+    // Neutral / Gray (Black/White)
+    --color-gray-950: #000000;
+    --color-gray-800: #121212;
+    --color-gray-700: #1e1e1e;
+    --color-gray-600: #2c2c2c;
+    --color-gray-500: #424242;
+    --color-gray-400: #757575;
+    --color-gray-300: #9e9e9e;
+    --color-gray-200: #bdbdbd;
+    --color-gray-100: #e0e0e0;
+    --color-gray-50: #f5f5f5;
+    --color-gray-0: #ffffff;
+
+    --text-header: var(--color-gray-800);
+    --text-label: var(--color-gray-400);
+    --text-button: var(--color-gray-500);
+    --text-title: var(--color-gray-400);
+  }
+
+  /* ------------------------------------------------------------------------
+     2. DARK THEME (공용) Tokens
+     ------------------------------------------------------------------------ */
+  &[data-theme='dark'] {
+    // Primary (Blue)
+    --color-primary-950: #030a14;
+    --color-primary-800: #071e27;
+    --color-primary-700: #0d2a3a;
+    --color-primary-600: #133b54;
+    --color-primary-500: #254a75;
+    --color-primary-400: #3572b7;
+    --color-primary-300: #5d91cb;
+    --color-primary-200: #87afda;
+    --color-primary-100: #b5d2ea;
+    --color-primary-50: #dce8f6;
+    --color-primary-0: #f2f6fb;
+
+    // Error (Red)
+    --color-error-950: #1a0303;
+    --color-error-800: #2a0706;
+    --color-error-700: #3a0b0a;
+    --color-error-600: #54120e;
+    --color-error-500: #91231c;
+    --color-error-400: #ff3b30;
+    --color-error-300: #ff7a70;
+    --color-error-200: #ffaaa4;
+    --color-error-100: #ffd5d2;
+    --color-error-50: #ffe2df;
+    --color-error-0: #fff5f4;
+
+    // Warning (Orange)
+    --color-warning-950: #1f0b00;
+    --color-warning-800: #2a1203;
+    --color-warning-700: #3b1b05;
+    --color-warning-600: #4f2607;
+    --color-warning-500: #86440d;
+    --color-warning-400: #fe5e06;
+    --color-warning-300: #fe8a47;
+    --color-warning-200: #ffb37a;
+    --color-warning-100: #fed9c3;
+    --color-warning-50: #ffecd9;
+    --color-warning-0: #fff7ee;
+
+    // Accent (Lime)
+    --color-accent-950: #0c1403;
+    --color-accent-800: #161e08;
+    --color-accent-700: #222c0c;
+    --color-accent-600: #313f11;
+    --color-accent-500: #567120;
+    --color-accent-400: #87d94b;
+    --color-accent-300: #a5e278;
+    --color-accent-200: #dcf0a8;
+    --color-accent-100: #edf7d3;
+    --color-accent-50: #f3fbe6;
+    --color-accent-0: #fbfdf2;
+
+    // Success (Indigo)
+    --color-success-950: #040626;
+    --color-success-800: #060a2e;
+    --color-success-700: #0d1452;
+    --color-success-600: #162077;
+    --color-success-500: #3e4aff;
+    --color-success-400: #5d64ff;
+    --color-success-300: #8a92ff;
+    --color-success-200: #b0b5ff;
+    --color-success-100: #d7daff;
+    --color-success-50: #e6e8ff;
+    --color-success-0: #f1f2ff;
+
+    // Neutral / Gray (Surface / Text)
+    --color-gray-950: #000000;
+    --color-gray-800: #080d10;
+    --color-gray-700: #101214;
+    --color-gray-600: #171a1d;
+    --color-gray-500: #1e2226;
+    --color-gray-400: #2a2f35;
+    --color-gray-300: #3a404b;
+    --color-gray-200: #525961;
+    --color-gray-100: #717980;
+    --color-gray-50: #99a3ad;
+    --color-gray-0: #ffffff;
+
+    --text-header: var(--color-gray-0);
+    --text-label: var(--color-gray-0);
+    --text-button: var(--color-gray-0);
+    --text-title: color-mix(in srgb, var(--color-gray-0), transparent 30%);
+  }
+
+  /* ------------------------------------------------------------------------
+     3. SEMANTIC TOKENS (명세서 가이드 매핑)
+     ------------------------------------------------------------------------ */
+  // 텍스트 & 레이블 정의 (950: 가장진함, 800-700: 중요헤더, 600-500: 기본텍스트)
+  --text-emphasized: var(--color-gray-950);
+
+  --text-important: var(--color-gray-700);
+  --text-main: var(--color-gray-600);
+  --text-body: var(--color-gray-500);
+  --text-muted: var(--color-gray-300);
+  --text-disabled: var(--color-gray-200);
+  --text-button-white: var(--color-gray-0);
+
+  // 컴포넌트 배경 & 요소 정의 (400: 버튼/링크 인터랙션, 100-50: 배경/구분선, 0: 기본배경)
+  --bg-main: var(--color-gray-0);
+  --bg-surface: var(--color-gray-100);
+  --bg-divider: var(--color-gray-100);
+  --bg-dialog: color-mix(in srgb, var(--color-gray-50), transparent 90%);
+  --bg-dialog-non-glass: var(--color-gray-50);
+  --bg-input: var(--color-gray-50);
+  --action-active: var(--color-primary-400);
+
+  // 로봇 상태 컬러 테마 예시 (상태 컬러 사용 예시 연동)
+  --status-critical: var(--color-error-500); // 치명적 경고 (#FF3B30)
+  --status-warning: var(--color-warning-500); // 경고 (#FE5E06)
+  --status-running: var(--color-success-400); // 가동 중 (#5D64FF)
+  --status-idle: var(--color-accent-400); // 대기 (#87D94B)
+  --status-offline: var(--color-gray-300); // 오프라인 (#3A404B)
+  --status-estop: var(--color-error-600); // 비상정지 (#E43A32)
+}

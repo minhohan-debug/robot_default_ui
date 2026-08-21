@@ -1,0 +1,309 @@
+{
+  "common": {
+    "username": "User",
+    "admin": "Admin",
+    "connecting": "Connecting...",
+    "reconnecting": "Reconnecting...",
+    "reconnect": "Reconnect",
+    "loading": "Loading...",
+    "confirm": "Confirm",
+    "cancel": "Cancel",
+    "close": "Close",
+    "save": "Save",
+    "edit": "Edit",
+    "delete": "Delete",
+    "success": "Success",
+    "error": {
+      "noPermission": "You do not have permission.",
+      "serverError": "An error has occurred.",
+      "networkError": "Network connection is unstable."
+    }
+  },
+  "pages": {
+    "login": {
+      "title": "Login",
+      "password": "Password",
+      "companyName": "UON Robotics",
+      "adminMode": "Admin Mode",
+      "error": {
+        "passwordLength": "Password must be between 4 and 16 characters.",
+        "loginFailed": "Login failed.",
+        "passwordMismatch": "The password does not match.",
+        "networkError": "Network connection is unstable."
+      }
+    },
+    "main": {
+      "logout": "Logout",
+      "setting": {
+        "displayMode": "Display Mode",
+        "language": "Language",
+        "close": "Close",
+        "logoutConfirmHeader": "Logout",
+        "logoutConfirmMessage": "Are you sure you want to log out?"
+      },
+      "menu": {
+        "robotStatus": "Live Status",
+        "statistics": "Statistics",
+        "robotSetting": "Robot Settings",
+        "sortingSetting": "Sorter Settings",
+        "appSetting": "App Settings"
+      },
+      "theme": {
+        "light": "Light",
+        "dark": "Dark"
+      }
+    },
+    "sortingSetting": {
+      "title": "Sorter Weight Setting",
+      "statusTitle": "Sorter Setting Status",
+      "sector": "Sector",
+      "weightLower": "Weight Lower",
+      "weightUpper": "Weight Upper",
+      "save": "Save Sorter Settings",
+      "numberPad": {
+        "title": "Sector {sector} - {label}",
+        "lower": "Weight Lower",
+        "upper": "Weight Upper"
+      },
+      "messages": {
+        "inputError": "Input Error",
+        "inputErrorDetail": "There is a sector where the lower weight is greater than the upper weight.",
+        "saveConfirm": "Are you sure you want to save the sorter sector settings?",
+        "saveSuccess": "Save Complete",
+        "saveSuccessDetail": "Sorter sector settings have been saved.",
+        "saveFailed": "Save Failed",
+        "saveFailedDetail": "Failed to save sorter sector settings."
+      }
+    },
+    "robotSetting": {
+      "robotId": "Robot ID",
+      "robotDescription": "Description",
+      "errorCode": "Error Code",
+      "errorDescription": "Error Message",
+      "registerErrorCode": "Register Error Code",
+      "registerRobot": "Register Robot",
+      "deleteErrorCodeConfirm": "Are you sure you want to delete this error code?",
+      "deleteErrorCodeSuccess": "Error code deleted.",
+      "deleteErrorCodeFailed": "Failed to delete error code.",
+      "robotListLoadFailed": "Failed to load robot list.",
+      "errorCodeLoadFailed": "Failed to load error code list.",
+      "robotRegisterTitle": "Register Robot",
+      "robotEditTitle": "Edit Robot",
+      "robotIdLabel": "Robot ID",
+      "robotDescriptionLabel": "Description",
+      "robotIdPlaceholder": "Number",
+      "robotDescriptionPlaceholder": "Up to 20 characters",
+      "robotRegisterSuccess": "Robot registered.",
+      "robotRegisterFailed": "Failed to register robot.",
+      "robotUpdateSuccess": "Robot updated.",
+      "robotUpdateFailed": "Failed to update robot.",
+      "deleteRobotConfirm": "Are you sure you want to delete this robot?",
+      "deleteRobotSuccess": "Robot deleted.",
+      "deleteRobotFailed": "Failed to delete robot.",
+      "robotIdAlreadyRegistered": "This robot ID is already registered.",
+      "robotNotRegistered": "Robot is not registered.",
+      "registerTitle": "Register Error Code",
+      "editTitle": "Edit Error Code",
+      "errorCodeLabel": "Error Code",
+      "errorDescriptionLabel": "Error Message",
+      "errorCodePlaceholder": "4-digit number",
+      "errorDescriptionPlaceholder": "Up to 30 characters",
+      "registerSuccess": "Error code registered.",
+      "registerFailed": "Failed to register error code.",
+      "updateSuccess": "Error code updated.",
+      "updateFailed": "Failed to update error code.",
+      "errorCodeAlreadyRegistered": "This error code is already registered.",
+      "commandId": "Command ID",
+      "command": "Command",
+      "commandDescription": "Description",
+      "extraUsable": "Extra Command",
+      "extraUsableOn": "Enabled",
+      "extraUsableOff": "Disabled",
+      "registerCommand": "Register Command",
+      "errorCodeListTitle": "Error Codes",
+      "robotListTitle": "Robots",
+      "commandListTitle": "Robot Commands",
+      "commandLoadFailed": "Failed to load command list.",
+      "commandRegisterTitle": "Register Command",
+      "commandEditTitle": "Edit Command",
+      "commandIdLabel": "Command ID",
+      "commandLabel": "Command",
+      "commandDescriptionLabel": "Description",
+      "extraUsableLabel": "Extra Command Usable",
+      "commandPlaceholder": "Command",
+      "commandDescriptionPlaceholder": "Up to 20 characters",
+      "commandRegisterSuccess": "Command registered.",
+      "commandRegisterFailed": "Failed to register command.",
+      "commandUpdateSuccess": "Command updated.",
+      "commandUpdateFailed": "Failed to update command.",
+      "deleteCommandConfirm": "Are you sure you want to delete this command?",
+      "deleteCommandSuccess": "Command deleted.",
+      "deleteCommandFailed": "Failed to delete command.",
+      "commandAlreadyRegistered": "This command is already registered.",
+      "commandNotRegistered": "Command is not registered.",
+      "validation": {
+        "robotId": "Robot ID must be a number.",
+        "robotDescription": "Description must be 20 characters or less.",
+        "errorCode": "Error code must be a 4-digit number.",
+        "errorDescription": "Error message must be 30 characters or less.",
+        "command": "Command is required.",
+        "commandDescription": "Description must be 20 characters or less."
+      }
+    },
+    "taskStatus": {
+      "safety": {
+        "connectionStatus": "Safety Controller Status",
+        "connected": "Connected",
+        "disconnected": "Disconnected"
+      },
+      "robot": {
+        "title": "Robot",
+        "robot_id": "Robot {id}",
+        "disconnected": "Robot disconnected",
+        "detail": "Detail",
+        "sector": "Sector",
+        "progress": "Progress",
+        "status": {
+          "disconnected": "Disconnected",
+          "noInfo": "No Info",
+          "idle": "Idle",
+          "running": "Running",
+          "paused": "Paused",
+          "stopped": "Stopped",
+          "emergency": "Emergency Stop"
+        }
+      },
+      "sorting": {
+        "connectionStatus": "Sorter Connection Status",
+        "sorterDisconnected": "Sorter disconnected",
+        "connected": "Connected",
+        "disconnected": "Disconnected"
+      },
+      "task": {
+        "title": "Task",
+        "disconnected": "Task info disconnected",
+        "commandNotFound": "Command not found.",
+        "target": "Target",
+        "done": "Done",
+        "progress": "Progress",
+        "start": "Start Task",
+        "stop": "Stop Task",
+        "confirmStart": "Are you sure you want to start the task?",
+        "confirmStop": "Are you sure you want to stop the task?",
+        "idle": "Idle",
+        "waiting": "Waiting {picked}/{target}",
+        "startLabel": "Start",
+        "stopLabel": "Stop",
+        "remoteControlNoRobot": "No connected robot to send remote control.",
+        "invalidInput": "Invalid input.",
+        "startRequested": "Task start requested.",
+        "stopRequested": "Task stop requested."
+      }
+    },
+    "taskHistories": {
+      "search": "Search",
+      "next": "Next",
+      "invalidDate": "Invalid date format.",
+      "invalidStartTime": "Invalid start time format.",
+      "invalidEndTime": "Invalid end time format.",
+      "invalidTimeRange": "Start time must be before end time.",
+      "dateInput": "Date Input",
+      "startTimeInput": "Start Time Input",
+      "endTimeInput": "End Time Input",
+      "noData": "No data",
+      "statusOk": "Done",
+      "statusFail": "Failed",
+      "sectorDetail": "Sector Detail",
+      "taskList": "Task List",
+      "taskDetail": "Task Detail",
+      "selectTask": "Select a task",
+      "columns": {
+        "taskId": "Task ID",
+        "executedAt": "Executed At",
+        "workedSector": "Worked Sector",
+        "status": "Status",
+        "sector": "Sector",
+        "targetCount": "Target",
+        "pickedCount": "Picked",
+        "progressRate": "Progress",
+        "workedCount": "Worked Count",
+        "startedAt": "Started At",
+        "endedAt": "Ended At",
+        "robotId": "Robot ID"
+      }
+    },
+    "robotErrorHistories": {
+      "noData": "No data",
+      "columns": {
+        "occurredAt": "Occurred At",
+        "code": "Error Code",
+        "message": "Error Message"
+      }
+    },
+    "robotDetail": {
+      "selectRobotPlaceholder": "Select robot",
+      "panels": {
+        "realTimeTask": "Real-time",
+        "robotStatus": "Robot",
+        "taskHistory": "History"
+      },
+      "emptyMessage": "No history",
+      "remoteControl": "Remote",
+      "remoteControlCommandListTitle": "Remote Command List",
+      "remoteControlConfirmTitle": "Remote Control Confirmation",
+      "remoteControlConfirmMessage": "Send command \"{command}\"?",
+      "remoteControlExtraCommandLabel": "Extra Command",
+      "remoteControlSend": "Send Remote Control",
+      "remoteControlHistoryTitle": "Remote Control History",
+      "remoteControlHistoryEmpty": "No remote control history.",
+      "remoteControlHistoryCommandColumn": "Command",
+      "remoteControlHistoryExtraDataColumn": "Extra Command",
+      "remoteControlHistoryDescriptionColumn": "Description",
+      "remoteControlHistoryCreatedAtColumn": "Sent At",
+      "robotArmMeshLoadFailed": "Failed to load some 3D meshes.",
+      "robotArmModelLoadFailed": "Failed to load the 3D model.",
+      "robotListLoadFailed": "Failed to load the robot list.",
+      "remoteControlCommandLoadFailed": "Failed to load the command list.",
+      "remoteControlSendSuccess": "Remote control request sent.",
+      "remoteControlSendFailed": "Failed to send the remote control request.",
+      "columns": {
+        "executedAt": "Time",
+        "workedSector": "Sector",
+        "targetCount": "Target",
+        "pickedCount": "Picked",
+        "status": "Progress"
+      },
+      "status": {
+        "inProgress": "Running",
+        "completed": "Done"
+      }
+    },
+    "statistics": {
+      "taskStatus": "Task Statistics",
+      "taskHistories": "Task Histories",
+      "robotTaskHistories": "Robot Task Histories",
+      "errorStatistics": "Error Statistics",
+      "robotErrorHistories": "Robot Error Histories",
+      "charts": {
+        "weeklyByDay": "Weekly Tasks by Day",
+        "weeklyByRobot": "Weekly Tasks by Robot",
+        "dailyByRobot": "Daily Tasks by Robot",
+        "dailyUtilization": "Daily Utilization by Robot",
+        "weeklyLossRateByDay": "Weekly Average Loss Rate by Day",
+        "weeklyErrorCountByRobot": "Weekly Average Error Count by Robot",
+        "dailyLossRateByRobot": "Daily Loss Rate by Robot",
+        "dailyErrorCountByRobot": "Daily Error Count by Robot",
+        "days": {
+          "mon": "Mon",
+          "tue": "Tue",
+          "wed": "Wed",
+          "thu": "Thu",
+          "fri": "Fri",
+          "sat": "Sat",
+          "sun": "Sun"
+        },
+        "total": "Total"
+      }
+    }
+  }
+}
