@@ -104,7 +104,11 @@ const startHistorySocket = async (): Promise<void> => {
   socket.value = s;
   const start = toDatetimeParam(searchDate.value, searchStartTime.value);
   const end = toDatetimeParam(searchDate.value, searchEndTime.value);
-  await s.connect(start, end);
+  try {
+    await s.connect(start, end);
+  } catch {
+    // 연결 실패 시 onClose/onError 핸들러가 처리
+  }
 };
 
 /** 원격 제어 이력 WebSocket 연결 종료 */

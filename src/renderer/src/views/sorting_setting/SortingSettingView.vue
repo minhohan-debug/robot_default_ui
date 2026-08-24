@@ -226,9 +226,7 @@ const handleSave = (): void => {
   const hasInvalid = Array.from({ length: 15 }, (_, i) => i).some(isInvalidSector);
   displayValidationError.value = hasInvalid;
   if (hasInvalid) {
-    showError('warn',
-      t('pages.sortingSetting.messages.inputErrorDetail'),
-    );
+    showError('warn', t('pages.sortingSetting.messages.inputErrorDetail'));
     return;
   }
   confirm.require({
@@ -260,13 +258,9 @@ const saveSorterSettings = async (): Promise<void> => {
     selected.value = null;
     originalWeightLower.value = [...weightLower.value];
     originalWeightUpper.value = [...weightUpper.value];
-    showError('success',
-      t('pages.sortingSetting.messages.saveSuccessDetail'),
-    );
+    showError('success', t('pages.sortingSetting.messages.saveSuccessDetail'));
   } catch {
-    showError('warn',
-      t('pages.sortingSetting.messages.saveFailedDetail'),
-    );
+    showError('warn', t('pages.sortingSetting.messages.saveFailedDetail'));
   }
 };
 
@@ -352,7 +346,7 @@ const handleDocumentClick = (event: MouseEvent): void => {
  */
 onMounted(() => {
   void loadSorterSettings();
-  void sorterSettingStatusSocket.connect();
+  sorterSettingStatusSocket.connect().catch(() => {});
   WebSocketService.onMessage((id, data) => {
     if (id === SorterSettingStatusSocket.ID) {
       handleSorterSettingMessage(SorterSettingStatusSocket.parseData(data));

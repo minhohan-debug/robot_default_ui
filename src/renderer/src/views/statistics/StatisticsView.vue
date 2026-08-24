@@ -93,7 +93,7 @@ const navigate = (path: string): void => {
 };
 </script>
 
-
+<style scoped lang="scss">
 .statistics-view {
   position: relative;
   width: 100%;
@@ -166,4 +166,4 @@ const navigate = (path: string): void => {
   width: 100px;
   opacity: 0.3;
 }
-
+</style>

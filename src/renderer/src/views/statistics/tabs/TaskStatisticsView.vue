@@ -69,7 +69,7 @@
  * - RobotStatisticsSocket, RobotErrorStatisticsSocket 실시간 데이터 수신
  * - 언어/테마 변경 시 차트 재초기화
  */
-import { ref, onMounted, onUnmounted, watch } from 'vue';
+import { ref, onMounted, onUnmounted, watch, nextTick } from 'vue';
 import { useI18n } from 'vue-i18n';
 import { useAdmin } from '@renderer/composables/useAdmin';
 import * as echarts from 'echarts';
@@ -609,14 +609,30 @@ onMounted(async () => {
   } catch {
     // 실패 시 기본 1~5호기 사용
   }
-  initCharts();
+  await nextTick();
+  try {
+    initCharts();
+  } catch (err) {
+    console.error('[TaskStatisticsView] initCharts failed:', err);
+    loading.value = false;
+  }
   registerWsListeners();
   window.addEventListener('resize', handleResize);
   themeObserver = new MutationObserver(() => reinitCharts());
   themeObserver.observe(document.documentElement, { attributes: true, attributeFilter: ['data-theme'] });
   loading.value = true;
-  await socket.connect();
-  if (isAdmin) await errorSocket.connect();
+  try {
+    await socket.connect();
+  } catch {
+    loading.value = false;
+  }
+  if (isAdmin) {
+    try {
+      await errorSocket.connect();
+    } catch {
+      loading.value = false;
+    }
+  }
 });
 
 /**

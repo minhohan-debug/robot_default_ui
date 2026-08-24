@@ -275,6 +275,8 @@ const connectJointSocket = async (robotId: number): Promise<void> => {
     }
     jointSocket = new RobotJointTcpSocket(robotId);
     await jointSocket.connect();
+  } catch {
+    // 연결 실패 시 onClose/onError 핸들러가 처리
   } finally {
     isConnectingSocket = false;
   }
@@ -335,7 +337,11 @@ const connectRobotTaskHistory = async (): Promise<void> => {
   const start = toDatetimeParam(taskSearchDate.value, taskSearchStartTime.value);
   const end = toDatetimeParam(taskSearchDate.value, taskSearchEndTime.value);
   await robotTaskHistorySocket.disconnect();
-  await robotTaskHistorySocket.connect(start, end);
+  try {
+    await robotTaskHistorySocket.connect(start, end);
+  } catch {
+    taskHistoryLoading.value = false;
+  }
 };
 
 /** DateTimeSearchPanel에서 [검색] 시 호출 */

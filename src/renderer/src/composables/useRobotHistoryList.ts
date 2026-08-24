@@ -100,13 +100,18 @@ export function useRobotHistoryList<T extends { uid?: string }>(
     historyMap.value = {};
     newIds.value = new Set();
     uidMap.clear();
-    const accessToken = await ensureAccessToken();
-    if (!accessToken) {
+    try {
+      const accessToken = await ensureAccessToken();
+      if (!accessToken) {
+        loading.value = false;
+        return;
+      }
+      await socket.disconnect();
+      await socket.connect(start, end);
+    } catch (error) {
+      console.error('[useRobotHistoryList] fetchHistories error:', error);
       loading.value = false;
-      return;
     }
-    await socket.disconnect();
-    await socket.connect(start, end);
   };
 
   // 컴포넌트가 제거되면 WebSocket 리스너와 연결을 정리합니다

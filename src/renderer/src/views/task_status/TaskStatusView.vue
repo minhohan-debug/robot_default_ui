@@ -691,9 +691,24 @@ const connect = async (): Promise<void> => {
     }
   });
 
-  await robotSocket.connect();
-  await taskSocket.connect();
-  await sorterSocket.connect();
+  try {
+    await robotSocket.connect();
+  } catch {
+    robotsLoading.value = false;
+    robotsDisconnected.value = true;
+  }
+  try {
+    await taskSocket.connect();
+  } catch {
+    taskLoading.value = false;
+    taskDisconnected.value = true;
+  }
+  try {
+    await sorterSocket.connect();
+  } catch {
+    sortingLoading.value = false;
+    sortingDisconnected.value = true;
+  }
 };
 
 /**

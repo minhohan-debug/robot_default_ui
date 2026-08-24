@@ -11,7 +11,7 @@
     <WaveBackground />
     <div class="content-area">
       <RouterView v-slot="{ Component }">
-        <Transition name="fade" mode="out-in">
+        <Transition name="fade">
           <component :is="Component" :key="String(topRouteName)" />
         </Transition>
       </RouterView>

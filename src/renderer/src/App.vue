@@ -1,7 +1,7 @@
 <template>
   <!-- 라우터에 등록된 페이지가 여기서 전환됩니다. -->
   <RouterView v-slot="{ Component, route }">
-    <Transition name="page-fade" mode="out-in">
+    <Transition name="page-fade">
       <component :is="Component" :key="route.matched[0]?.name" />
     </Transition>
   </RouterView>

@@ -184,10 +184,14 @@ const fetchHistories = async (): Promise<void> => {
   selectedTaskDetail.value = [];
   isFirstMessage.value = true;
   await taskHistorySocket.disconnect();
-  await taskHistorySocket.connect(
-    toDatetimeParam(searchDate.value, searchStartTime.value),
-    toDatetimeParam(searchDate.value, searchEndTime.value),
-  );
+  try {
+    await taskHistorySocket.connect(
+      toDatetimeParam(searchDate.value, searchStartTime.value),
+      toDatetimeParam(searchDate.value, searchEndTime.value),
+    );
+  } catch {
+    loading.value = false;
+  }
 };
 
 /**
