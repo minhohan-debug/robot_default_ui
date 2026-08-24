@@ -8,7 +8,7 @@
     - 우측 상단: 앱 설정(테마/언어/로그아웃) 다이얼로그 오픈 버튼
   -->
   <div class="main-wrapper">
-    <WaveBackground />
+    <Factory3DBackground />
     <div class="content-area">
       <RouterView v-slot="{ Component }">
         <Transition name="fade">
@@ -65,7 +65,7 @@ import { useI18n } from 'vue-i18n';
 import { useRouter, useRoute } from 'vue-router';
 import { useAdmin } from '@renderer/composables/useAdmin';
 import SettingDialogView from '@renderer/views/main/dialog/SettingDialogView.vue';
-import WaveBackground from '@renderer/components/WaveBackground.vue';
+import Factory3DBackground from '@renderer/components/Factory3DBackground.vue';
 
 // 메뉴 항목의 표시 순서; 인덱스로 인디케이터 위치를 계산합니다
 const MENU_ORDER = ['TaskStatus', 'Statistics', 'RobotSetting', 'SortingSetting'];
@@ -132,6 +132,7 @@ onUnmounted(() => {
   position: absolute;
   inset: 0;
   overflow: hidden;
+  z-index: 1;
 }
 
 // ==========================================
